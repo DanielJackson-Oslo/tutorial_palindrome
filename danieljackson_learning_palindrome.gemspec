@@ -8,9 +8,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Daniel Jackson"]
   spec.email         = ["daniel@snilldesign.no"]
 
-  spec.summary       = "TODO: Write a short summary, because RubyGems requires one."
-  spec.description   = "TODO: Write a longer description or delete this line."
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = "A tiny demo gem generating palindromes, from the learnenough.com Ruby course."
+  spec.homepage      = "https://github.com/DanielJackson-Oslo/tutorial_palindrome"
   spec.license       = "MIT"
   spec.required_ruby_version = ">= 2.4.0"
 
