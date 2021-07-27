@@ -43,11 +43,15 @@ Example usage:
 "Racecar!".palindrome?
 # >> True
 
-# Numbers work
+# Integers work
 12321.palindrome?
 # >> True
 223.palindrome?
 # >> False
+
+# And floats:
+131.131.palindrome?
+# >> True
 
 
 ```

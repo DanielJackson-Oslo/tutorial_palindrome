@@ -1,8 +1,6 @@
 # frozen_string_literal: true
 
 require_relative "danieljackson_learning_palindrome/version"
-
-module DanieljacksonLearningPalindrome
-  class Error < StandardError; end
-  # Your code goes here...
-end
+require_relative "String_palindrome"
+require_relative "Float_palindrome"
+require_relative "Integer_palindrome"
