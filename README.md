@@ -1,8 +1,10 @@
 # DanieljacksonLearningPalindrome
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/danieljackson_learning_palindrome`. To experiment with that code, run `bin/console` for an interactive prompt.
+This simply extends String and Integer objects with a .palindrome? method.
 
-TODO: Delete this and the text above, and describe your gem
+The palindrome? method returns a boolean if the string or integer is a palindrome, that is, if it is the same in reverse.
+
+It normalizes the string (or number) first, so that CaSiNg or formatting like commas or periods no longer matters.
 
 ## Installation
 
@@ -22,7 +24,33 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+
+Example usage:
+
+```ruby
+
+# Casing is ignored. Racecar with an upper case R works as well as racecar with a lower case r.
+"racecar".palindrome?
+# >> True
+"Racecar".palindrome?
+# >> True
+
+# Non palindromes, of course, return False
+"Horse".palindrome?
+# >> False
+
+# Punctuation is ignored
+"Racecar!".palindrome?
+# >> True
+
+# Numbers work
+12321.palindrome?
+# >> True
+223.palindrome?
+# >> False
+
+
+```
 
 ## Development
 
