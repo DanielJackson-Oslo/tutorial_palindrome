@@ -42,4 +42,10 @@ class DanieljacksonLearningPalindromeTest < Minitest::Test
     assert "A man, a plan, a canal — Panama!".palindrome?
   end
 
+  def test_empty_string
+    refute "".palindrome?
+    refute "   ".palindrome?
+    refute " \t  ".palindrome?
+  end
+
 end

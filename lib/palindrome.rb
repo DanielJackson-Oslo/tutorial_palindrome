@@ -5,7 +5,11 @@
 module Palindrome
 
     def palindrome? 
-        process_before_palindrome_test == process_before_palindrome_test.reverse
+        if (process_before_palindrome_test.length == 0) 
+            false # No length, no palindrome
+        else
+            process_before_palindrome_test == process_before_palindrome_test.reverse
+        end
     end 
 
     private
